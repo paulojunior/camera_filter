@@ -48,9 +48,7 @@ class PhotosCollectionViewController: UICollectionViewController {
                     self?.selectedPhotoSubject.onNext(image)
                     self?.dismiss(animated: true, completion: nil)
                 }
-                
             }
-            
         }
     }
     
