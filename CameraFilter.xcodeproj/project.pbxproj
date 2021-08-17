@@ -13,6 +13,7 @@
 		2E5419D726CC41DB0033BCAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5419D526CC41DB0033BCAC /* Main.storyboard */; };
 		2E5419D926CC41DD0033BCAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E5419D826CC41DD0033BCAC /* Assets.xcassets */; };
 		2E5419DC26CC41DD0033BCAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5419DA26CC41DD0033BCAC /* LaunchScreen.storyboard */; };
+		2E5419E426CC447B0033BCAC /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5419E326CC447B0033BCAC /* PhotosCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2E5419D826CC41DD0033BCAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E5419DB26CC41DD0033BCAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E5419DD26CC41DD0033BCAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E5419E326CC447B0033BCAC /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		2E5419CE26CC41DB0033BCAC /* CameraFilter */ = {
 			isa = PBXGroup;
 			children = (
+				2E5419E526CC44A00033BCAC /* Controllers */,
 				2E5419CF26CC41DB0033BCAC /* AppDelegate.swift */,
 				2E5419D126CC41DB0033BCAC /* SceneDelegate.swift */,
-				2E5419D326CC41DB0033BCAC /* ViewController.swift */,
 				2E5419D526CC41DB0033BCAC /* Main.storyboard */,
 				2E5419D826CC41DD0033BCAC /* Assets.xcassets */,
 				2E5419DA26CC41DD0033BCAC /* LaunchScreen.storyboard */,
 				2E5419DD26CC41DD0033BCAC /* Info.plist */,
 			);
 			path = CameraFilter;
+			sourceTree = "<group>";
+		};
+		2E5419E526CC44A00033BCAC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E5419D326CC41DB0033BCAC /* ViewController.swift */,
+				2E5419E326CC447B0033BCAC /* PhotosCollectionViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 				2E5419D426CC41DB0033BCAC /* ViewController.swift in Sources */,
 				2E5419D026CC41DB0033BCAC /* AppDelegate.swift in Sources */,
 				2E5419D226CC41DB0033BCAC /* SceneDelegate.swift in Sources */,
+				2E5419E426CC447B0033BCAC /* PhotosCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
