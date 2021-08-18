@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import CoreImage
+import RxSwift
 
 class FilterServices {
     
@@ -15,6 +16,18 @@ class FilterServices {
     
     init() {
         self.context = CIContext()
+    }
+    
+    func applyFilter(to inputImage: UIImage) -> Observable<UIImage> {
+        return Observable<UIImage>.create { observer in
+            
+            self.applyFilter(to: inputImage) { filteredImage in
+                observer.onNext(filteredImage)
+            }
+            
+            return Disposables.create()
+            
+        }
     }
     
     func applyFilter(to inputImage: UIImage, completion: @escaping ((UIImage) -> ())) {
